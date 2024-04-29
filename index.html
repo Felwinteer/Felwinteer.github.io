@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Sami</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Acceuil</a></li>
+                <li><a href="#about">Présentation</a></li>
+                <li><a href="#services">Mes Compétences</a></li>
+                <li><a href="#portfolio">Projets Réalisés</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Salut, je suis <span>Sami</span><br>Bienvenue sur mon E-portfolio</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">À propos de moi </h1>
+                <p>Bienvenue sur mon portfolio! Je suis actuellement en deuxième année de BUT à l'IUT Paris Rives de Seine. Mon intérêt pour les mathématiques a commencé lors de ma première année en STI2D, avec une spécialisation en mathématiques et physique. Ce portfolio reflète mon parcours académique à travers des projets concrets. De la programmation à la résolution de problèmes, chaque réalisation témoigne de ma volonté de progresser.</p>
+                <br>
+                <p>Explorez mes compétences et mon engagement à travers ces projets. Ma passion pour les mathématiques et la physique continue de guider ma démarche. Chaque projet marque une étape dans mon apprentissage continu.</p>              
+                <br>
+               
+                <p>Que vous soyez recruteur, collègue ou simplement curieux, je suis ravi de partager mon travail et mon parcours avec vous. Merci de consacrer un moment à la découverte de mon portfolio.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>Depuis Mai 2023</span><br>Employé qualifié libre service</li>
+                        <li><span>Durant Juillet 2023</span><br>Intérimaire</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Depuis Septembre 2022 </span><br>BUT-Science des Données, ex STID</li>
+                        <li><span>Septembre 2021 - Juin 2022</span><br>BUT-Informatique</li>
+                        <li><span>septembre 2020 - Juillet 2021</span><br>Baccalauréat - STI2D</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------Competences---------------- -->
+<div id="competences">
+    <div class="container">
+        <h1 class="sub-title">Mes Compétences</h1>
+        <div class="competences-table"></div>
+            <table>
+                <tr>
+                    <th>Langue</th>
+                    <th>Programmation</th>
+                </tr>
+                <tr>
+                    <td><strong>Français</strong></td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td><strong>Anglais</strong></td>
+                    <td>Suite Office</td>
+                </tr>
+                <tr>
+                    <td><strong>Soft skills</strong></td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>Rigoureux</td>
+                    <td>Power BI</td>
+                </tr>
+                <tr>
+                    <td>Communication</td>
+                    <td>SQL</td>
+                </tr>
+                <tr>
+                    <td>Adaptabilité</td>
+                    <td>SAS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>Statistique et Informatique décisionnel</strong></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Analyse statistique de données</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Modélisations statistiques</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Traitement et requêtes d'une base de données</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Reporting et data visualisation</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- ----------Projet------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Mes projets</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="Shinny.png">
+                <div class="layer">
+                    <h3>Projet d'Analyse Climatique avec R Shiny</h3>
+                    <p>Dans l'aventure de mon projet R Shiny, l'enjeu était de transmuter des projections climatiques complexes en insights stratégiques pour des analystes financiers. Les données embrassaient des scénarios variés, répartis sur l'ensemble des communes de France. L'ampleur des données m'a exposé à une difficulté inattendue : assurer une performance optimale de l'application malgré la densité des informations.</p>
+                    <br>
+                    <p>La résolution de ce défi technique s'est jouée sur le terrain de la vectorisation avec R. Cette technique m'a permis d'optimiser le traitement des données et d'accélérer les temps de réponse de l'application. Ce fut une révélation : l'efficacité du code est aussi cruciale que la précision des analyses. J'ai dû réfléchir de manière créative, testant diverses approches pour aboutir à une solution robuste.</p>
+                    <br>
+                    <p>En définitive, la réussite de ce tableau de bord fut une leçon de persévérance et d'innovation. J'ai non seulement amélioré ma compétence en R, mais j'ai également acquis une compréhension plus nuancée des besoins des utilisateurs finaux. Grâce à cette expérience, je suis désormais en mesure de transformer des données abstraites en visualisations intuitives et en recommandations concrètes, renforçant l'impact de l'analyse dans la prise de décision stratégique.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Power.png">
+                <div class="layer">
+                    <h3>Projet d'Analyse des Performances en Powerlifting</h3>
+                    <p>Dans ce projet, j'ai analysé un vaste ensemble de données sur les compétitions de powerlifting pour étudier les déterminants de la performance athlétique. L'objectif était d'identifier les facteurs influençant les performances en fonction de l'âge, du poids, et de l'équipement utilisé, en se concentrant sur les trois mouvements principaux du sport : le squat, le développé couché, et le soulevé de terre.</p>
+                   <br>
+                   <p>Face à la complexité des données, comprenant des anomalies et une grande variété de variables, la première étape a été de nettoyer et de structurer les données de manière cohérente. Ce travail de préparation des données m'a permis d'affiner mes compétences en manipulation de données et en analyse statistique avec R. J'ai utilisé des techniques avancées comme l'ANOVA pour examiner l'effet de la catégorie de poids sur la performance, et des tests de Chi-carré pour évaluer l'impact de différents équipements.</p>
+                    <br>
+                   <p>Une des principales difficultés a été de gérer les données aberrantes et de garantir l'homoscédasticité des résidus dans les analyses ANOVA, essentielles pour la validité des résultats. J'ai surmonté ces défis en appliquant des transformations de données et en ajustant les modèles statistiques pour assurer une analyse robuste.</p>
+                   <br>
+                   <p>L'analyse a révélé que l'âge et le poids ont des influences significatives sur les performances, avec des pics de performance variant selon le sexe et le mouvement. Ce projet a non seulement amélioré ma maîtrise de R pour l'analyse statistique, mais m'a aussi enseigné comment interpréter de manière critique les résultats statistiques et présenter des conclusions claires à un public non spécialisé. J'ai acquis une expérience précieuse en visualisation de données, en traitement préliminaire des données, et en application de méthodes statistiques avancées, renforçant mon profil en tant qu'analyste de données.</p>
+                   <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="python.png">
+                <div class="layer">
+                    <h3>Projet d'Analyse des Tendances des Mangas</h3>
+                    <p>Passionnés de mangas, nous avons choisi d'analyser une base de données exhaustive pour comprendre les facteurs influençant la popularité et les ventes des mangas. L'objectif était de déterminer comment un nouveau créateur pourrait réussir dans cette industrie dynamique, en prenant en compte des variables comme l'éditeur, le genre du manga, et le nombre de volumes.</p>
+                    <br>
+                    <p>La manipulation et l'analyse de données volumineuses avec Python représentaient une contrainte majeure, notamment à cause de la diversité et de la complexité des variables. J'ai amélioré mes compétences en nettoyage et préparation de données, et j'ai acquis une expertise dans l'utilisation de bibliothèques Python pour l'analyse de données, telles que Pandas et Matplotlib.                    </p>
+                    <br>
+                    <p>La principale difficulté rencontrée était l'analyse des tendances à long terme et la détection des patterns dans les données des ventes, qui étaient fortement influencées par des transitions numériques comme les scans de mangas. J'ai surmonté ce défi en utilisant des techniques de visualisation avancées pour identifier clairement les tendances et en appliquant des méthodes statistiques pour tester différentes hypothèses.                    </p>
+                    <br>
+                    <p>Notre analyse a révélé l'importance du choix du genre et de l'éditeur pour un nouveau mangaka. Les mangas de type Shonen se sont avérés être les plus populaires, indiquant une direction claire pour les futurs créateurs. Ce projet a renforcé mes compétences en programmation Python, en analyse statistique, et en visualisation de données. J'ai également appris à interpréter et présenter des données complexes de manière accessible, préparant ainsi le terrain pour des décisions éclairées dans le secteur de l'édition de mangas.</p>                    
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Classification.png" >
+                <div class="layer">
+                    <h3>Titre du Projet 4</h3>
+                    <p>Ce projet avait pour but d'analyser et de classifier les joueurs de football en fonction de leurs performances et caractéristiques sur le terrain. Utilisant un jeu de données riche, nous avons cherché à identifier des profils de joueurs distincts et à comprendre comment leurs actions influencent leurs performances.</p>
+                    <br>
+                    <p>Le principal défi technique résidait dans l'application de méthodes factorielles avancées pour réduire la dimensionnalité des données et dans l'utilisation de techniques de clustering pour segmenter les joueurs. Nous avons utilisé R et des packages spécialisés comme FactoMineR, ggplot2, et dplyr pour mener à bien ces analyses.</p>
+                    <br>
+                    <p>Nous avons dû gérer des ensembles de données complexes avec de nombreuses variables interdépendantes. L'Analyse en Composantes Principales (ACP) a été appliquée pour visualiser les relations entre les variables et identifier les contributions les plus significatives à la variation des données. Le choix du nombre de clusters a été optimisé en évaluant l'éboulis des valeurs propres et en ajustant les visualisations pour une interprétation claire.</p>
+                    <br>
+                    <p>Les résultats ont permis de distinguer clairement les profils des joueurs selon leur position et leur contribution sur le terrain, mettant en évidence des stratégies potentielles pour l'optimisation des équipes. Ce travail a renforcé mes compétences en R pour le traitement et l'analyse de données, en méthodes factorielles pour la réduction de dimensionnalité et en techniques de classification pour la segmentation de données.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Gestion.png" >
+                <div class="layer">
+                    <h3>Projet de Gestion de l'Étude Épidémiologique sur la Technique RHC</h3>
+                    <p>Notre mission consistait à analyser les impacts de la technique de cathétérisme cardiaque droit (RHC) à travers une étude épidémiologique impliquant plusieurs centres hospitaliers. L'objectif était de déterminer les bénéfices et les risques associés à cette technique, essentielle pour les patients en soins intensifs.</p>
+                    <br>
+                    <p>Le projet a été structuré suivant la méthode en cascade, ce qui a nécessité une planification rigoureuse dès les premières phases. La création d'un cahier des charges précis a été une étape clé pour aligner les attentes de toutes les parties prenantes et définir clairement les livrables attendus. Nous avons élaboré un diagramme de Gantt pour visualiser le calendrier du projet, assurant ainsi le suivi des différentes phases et le respect des délais.</p>
+                    <br>
+                    <p>La gestion des délais a été un défi majeur, exacerbé par des différences de calendrier académique au sein de l'équipe. Pour surmonter cela, nous avons adopté des outils de communication et de collaboration en ligne, tels que WhatsApp et Google Agenda, qui nous ont permis de synchroniser nos travaux et de maintenir une communication fluide malgré les contraintes de distance.</p>
+                    <br>
+                    <p>Ce projet m'a enseigné l'importance cruciale d'une bonne gestion de projet, même dans un contexte scientifique où les résultats dépendent fortement de la rigueur méthodologique. J'ai appris à apprécier le rôle d'un cahier des charges détaillé pour prévenir les ambiguïtés et aligner les efforts de l'équipe. La nécessité d'une planification précise et l'utilisation d'outils de gestion de projet se sont révélées essentielles pour le succès du projet, en garantissant que chaque étape était bien documentée et suivie conformément aux attentes de la maîtrise d'ouvrage.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div> 
+        <br>
+        <br>
+        <p>Pour toute demande d'informations supplémentaires sur ces projets, n'hésitez pas à me contacter.</p>
+
+    </div>
+</div>
+
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Me Contacter</h1>
+                <p><i class="fas fa-paper-plane"></i> samisaids@outlook.fr</p>
+                <!-- Lien LinkedIn -->
+                <div class="linkedin-container">
+                    <a href="https://www.linkedin.com/in/sami-said-b1437a273/" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                    </a>
+                </div>
+                <a href="CV_Sami_SAID.pdf" download class="btn btn2">Télécharger le CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Prenom et nom " required>
+                    <input type="email" name="Email" placeholder="Votre Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
+                    <button type="Envoyer" class="btn btn2">Envoyer</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sami</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
